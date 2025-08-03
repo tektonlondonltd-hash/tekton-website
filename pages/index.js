@@ -2,9 +2,8 @@
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import { motion } from "framer-motion";
-import { Button } from "@/components/ui/button";
 
-const Scene = dynamic(() => import("@/components/Scene"), { ssr: false });
+const Scene = dynamic(() => import("../components/Scene"), { ssr: false });
 
 export default function Home() {
   return (
@@ -31,7 +30,7 @@ export default function Home() {
           <section className="text-center py-20 bg-gradient-to-br from-gray-100 to-white">
             <motion.h2 className="text-4xl font-bold mb-4" whileInView={{ opacity: 1, y: 0 }} initial={{ opacity: 0, y: 50 }} transition={{ duration: 0.6 }}>Luxury Renovation in London</motion.h2>
             <p className="mb-8 text-lg text-gray-700">Where modern design meets timeless craftsmanship.</p>
-            <Button className="bg-teal-700 text-white px-6 py-2 rounded-xl">Explore Projects</Button>
+            <button className="bg-teal-700 text-white px-6 py-2 rounded-xl">Explore Projects</button>
           </section>
           <section className="h-[400px]">
             <Scene />
