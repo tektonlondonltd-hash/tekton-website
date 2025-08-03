@@ -1,3 +1,4 @@
+
 {
   "name": "tekton-website",
   "version": "1.0.0",
@@ -5,19 +6,15 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "next start"
   },
   "dependencies": {
-    "autoprefixer": "^10.4.14",
-    "framer-motion": "^10.12.16",
-    "lucide-react": "^0.264.0",
-    "next": "13.4.19",
-    "postcss": "^8.4.24",
+    "next": "13.5.6",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-icons": "^4.10.1",
-    "react-scroll-parallax": "^3.3.0",
-    "tailwindcss": "^3.3.2"
+    "tailwindcss": "^3.3.2",
+    "framer-motion": "^10.12.16",
+    "@react-three/fiber": "^8.15.4",
+    "@react-three/drei": "^9.87.2"
   }
 }
